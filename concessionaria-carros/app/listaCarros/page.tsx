@@ -10,8 +10,9 @@ export default function listaCarro() {
         <table>
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Produto</th>
+              <th>Foto do veículo</th>
+              <th>Modelo</th>
+              <th>Ano</th>
               <th>Detalhes</th>
             </tr>
           </thead>
@@ -19,8 +20,9 @@ export default function listaCarro() {
             {carrosData.map(function (item) {
               return (
                 <tr key={item.id}>
-                  <td>{item.id}</td>
+                  <td><img src={item?.foto} alt={`${item?.modelo}`} /></td>
                   <td>{item.modelo}</td>
+                  <td>{item.ano}</td>
                   <td>
                     <Link href={'/detalhesVeiculo/' + item.id}>
                       Ver Detalhes

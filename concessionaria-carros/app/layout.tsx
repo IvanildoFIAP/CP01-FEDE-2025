@@ -1,4 +1,6 @@
-import type { Metadata } from 'next'; // Importe o tipo Metadata
+import type { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Next.js',
@@ -19,8 +21,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"
         />
+        <title>Concessionária de Carros</title>
       </head>
-      <body>{children}</body>
+      <body>
+      <Header />
+        <main>{children}</main>
+      </body>
+      <Footer />
     </html>
   );
 }
