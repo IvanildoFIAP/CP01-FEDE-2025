@@ -1,0 +1,21 @@
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  text-align: center;
+  padding: 50px 0;
+  background: #e1e4ef;
+  margin: 0;
+}
+
+div{
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
